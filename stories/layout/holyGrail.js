@@ -17,14 +17,14 @@ story.add('Holy Grail', () => {
 
   return (
     <WithNotes notes={notes}>
-      <Layout size={FIT} className={styles.holyGrail}>
+      <Layout className={styles.holyGrail}>
         <Layout size={AUTO} className={styles.header}>
           <Grid root>
             <h1>Header</h1>
           </Grid>
         </Layout>
         <Layout>
-          <Layout>
+          <Layout size={FIT}>
             <Grid root>
               <Grid size={2} className={styles.nav}><h2>Nav</h2></Grid>
               <Grid size={8} className={styles.content} align={Grid.ALIGN.TOP}>
