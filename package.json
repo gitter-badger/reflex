@@ -41,7 +41,7 @@
     "postcss-import": "10.0.0",
     "postcss-loader": "2.0.5",
     "postcss-nesting": "4.0.1",
-    "prettier": "1.4.2",
+    "prettier": "1.4.4",
     "react-test-renderer": "15.5.4",
     "regenerator-runtime": "0.10.5",
     "style-loader": "0.18.2",

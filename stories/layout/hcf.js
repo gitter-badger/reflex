@@ -6,37 +6,27 @@ import story from './story'
 import Grid from '../../src/grid'
 import Layout from '../../src/layout'
 import LoremIpsum from './loremIpsum'
-import styles from './holyGrail.css'
+import styles from './page.css'
 
 const { AUTO } = Layout.SIZE
-const notes =
-  'An implementation of the Holy Grail layout using the grid and layout systems. The maximum content width is limited to the page width and the hight is either the page height or content height, whichever is larger'
+const notes = 'A 3 section layout with sticky header and minimum height of 100%'
 
-story.add('Holy Grail', () => {
+story.add('H / C / F', () => {
   const includeText = boolean('Show text', false)
 
   return (
     <WithNotes notes={notes}>
-      <Layout className={styles.holyGrail}>
+      <Layout className={styles.page}>
         <Layout size={AUTO} className={styles.header}>
           <Grid root>
             <h1>Header</h1>
           </Grid>
         </Layout>
-        <Layout>
+        <Layout className={styles.content}>
           <Layout>
             <Grid root>
-              <Grid size={2} className={styles.nav}><h2>Nav</h2></Grid>
-              <Grid
-                size={8}
-                className={styles.content}
-                align={Grid.ALIGN.TOP}
-                style={{ height: 1000 }}
-              >
-                <h2>Content</h2>
-                {includeText && <p>{LoremIpsum}</p>}
-              </Grid>
-              <Grid size={2} className={styles.ads}><h2>Ads</h2></Grid>
+              <h2>Content</h2>
+              {includeText && <p>{LoremIpsum}</p>}
             </Grid>
             <Layout size={AUTO} className={styles.footer}>
               <Grid root>

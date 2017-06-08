@@ -7,7 +7,7 @@ import Grid from '../../src/grid'
 import Item from '../../src/item'
 import Layout from '../../src/layout'
 import LoremIpsum from './loremIpsum'
-import styles from './twoSections.css'
+import styles from './page.css'
 
 const { FIT, AUTO } = Layout.SIZE
 const notes =
@@ -18,7 +18,7 @@ story.add('Two Sections', () => {
 
   return (
     <WithNotes notes={notes}>
-      <Layout size={FIT} className={styles.twoSections}>
+      <Layout size={FIT} className={styles.page}>
         <Layout size={AUTO} className={styles.header}>
           <Grid root>
             <h1>Header</h1>

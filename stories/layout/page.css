@@ -1,7 +1,7 @@
 @import './variables.css';
 
-.twoSections {
-  & h1, & h2, & .nav > *, & .content > *, & .ads > * {
+.page {
+  & h1, & h2, & .nav > *, & .ads > * {
     margin: 10px;
   }
 

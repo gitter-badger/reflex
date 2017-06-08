@@ -1,7 +1,7 @@
 @import './variables.css';
 
 .holyGrail {
-  & h1, & h2, & .nav > *, & .content > *, & .ads > * {
+  & h1, & h2 {
     margin: 10px;
   }
 
